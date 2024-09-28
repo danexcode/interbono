@@ -11,10 +11,8 @@
 2. Estado de Clientes:
 
     • Se mostrarán dos estados principales:
-
-        ◦ Clientes “Por Pagar”: Aquí se listarán los clientes que aún tienen cuentas pendientes.
-
-        ◦ Clientes “Cancelados”: Esta sección incluirá a los clientes cuyas cuentas han sido saldadas.
+        - Clientes “Por Pagar”: Aquí se listarán los clientes que aún tienen cuentas pendientes.
+        - Clientes “Cancelados”: Esta sección incluirá a los clientes cuyas cuentas han sido saldadas.
 
     • Para cada transacción, se indicará cuánto se debe a cada cliente.
 
@@ -27,9 +25,7 @@
 4. Estado Individual de Clientes:
 
     • Para cada cliente, se mostrará su estado actual:
-
         ◦ Si tiene una cuenta pendiente.
-        
         ◦ Si está al día en sus pagos.
 
 5. Historial de Transacciones:
