@@ -1,4 +1,4 @@
-# Proyecto interbono: Sistema de Gestión de Pagos Ciano
+# Proyecto interbono: Sistema de Gestión de Pagos danifanton
 
 ### Requerimientos Funcionales:
 
