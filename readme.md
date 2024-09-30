@@ -1,4 +1,4 @@
-# Proyecto interbono: Sistema de Gestión de Pagos danifanton
+# Proyecto: Sistema de Gestión de Pagos Interbono
 
 ### Requerimientos Funcionales:
 
