@@ -1,4 +1,4 @@
-# Proyecto interbono: Sistema de Gestión de Pagos danifanton
+# Proyecto interbono: Sistema de Gestión de Pagos (f_boton)
 
 ### Requerimientos Funcionales:
 
