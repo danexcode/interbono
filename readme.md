@@ -1,4 +1,4 @@
-# Proyecto interbono: Sistema de Gestión de Pagos (f_boton)
+# Proyecto interbono: Sistema de Gestión de Pagos (f_boton)(f_tabla) (f_boton2)
 
 ### Requerimientos Funcionales:
 
