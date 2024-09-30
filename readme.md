@@ -1,4 +1,4 @@
-# Proyecto: Sistema de Gestión de Pagos Interbono
+# Proyecto interbono: Sistema de Gestión de Pagos 
 
 ### Requerimientos Funcionales:
 
