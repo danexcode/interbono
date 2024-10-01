@@ -4,6 +4,9 @@ export default function Home() {
   return (
     <main className={styles.main}>
       <h1>Hola mundo</h1>
+      <p>Bienvenido a gestor financiero</p>
+      <p>inicia sesion para continuar</p>
+      <p>Iniciar sesion</p>
     </main>
   );
 }

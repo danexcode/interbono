@@ -1,7 +1,11 @@
 import type { Metadata } from "next";
-import Link from "next/link"
+
+import { PrimeReactProvider } from "primereact/api"
+import { Button } from 'primereact/button';
+
+import "primereact/resources/themes/bootstrap4-light-blue/theme.css"
+
 import localFont from "next/font/local";
-import "./globals.css";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -28,20 +32,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
-        <nav>
-          <ul>
-            <li>
-              <Link href="/">Home</Link>
-            </li>
-            <li>
-              <Link href="/transacciones">transacciones</Link>
-            </li>
-            <li>
-              <Link href="/clientes">clientes</Link>
-            </li>
-          </ul>
-        </nav>
-        {children}
+        <PrimeReactProvider>
+          <Button label="Submit" />
+          {children}
+        </PrimeReactProvider>
       </body>
     </html>
   );
