@@ -1,10 +1,11 @@
 import type { Metadata } from "next";
 
 import { PrimeReactProvider } from "primereact/api"
-import { Button } from 'primereact/button';
 
+import Header from "../components/Header/Header"
+
+import "./globals.css"
 import "primereact/resources/themes/bootstrap4-light-blue/theme.css"
-
 import localFont from "next/font/local";
 
 const geistSans = localFont({
@@ -29,11 +30,13 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+
+  console.log("LAyoit")
   return (
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
         <PrimeReactProvider>
-          <Button label="Submit" />
+          <Header/>
           {children}
         </PrimeReactProvider>
       </body>
