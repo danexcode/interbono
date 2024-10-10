@@ -1,7 +1,7 @@
 //import React from "react";
 
 
-import React, { useState, useEffect } from 'react';
+//import React, { useState, useEffect } from 'react';
 import { DataTable } from 'primereact/datatable';
 import { Column } from 'primereact/column';
 
@@ -23,7 +23,7 @@ interface Product {
 
 export default function BasicDemo() {
     
-  const columns = [
+  const columns: Product[] = [
       {
         id: '1000',
         code: 'f230fh0g3',
