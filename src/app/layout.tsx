@@ -1,48 +1,30 @@
-import type { Metadata } from "next";
-import Link from "next/link"
-import localFont from "next/font/local";
-import "./globals.css";
+'use client';
+import { LayoutContextProvider } from '../layout/context/layoutcontext';
+import { PrimeReactProvider } from 'primereact/api';
 
-const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
-  weight: "100 900",
-});
+import "primereact/resources/themes/lara-light-blue/theme.css";
+import 'primeicons/primeicons.css';
+import 'primeflex/primeflex.css';
 
-const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
-  weight: "100 900",
-});
+import "../styles/layout/layout.scss";
 
-export const metadata: Metadata = {
-  title: "Gestor de Pagos",
-  description: "Un gestor para registrar pagos a clientes",
-};
+interface RootLayoutProps {
+    children: React.ReactNode;
+}
 
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
-  return (
-    <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable}`}>
-        <nav>
-          <ul>
-            <li>
-              <Link href="/">Home</Link>
-            </li>
-            <li>
-              <Link href="/transacciones">transacciones</Link>
-            </li>
-            <li>
-              <Link href="/clientes">clientes</Link>
-            </li>
-          </ul>
-        </nav>
-        {children}
-      </body>
-    </html>
-  );
+export default function RootLayout({ children }: RootLayoutProps) {
+    return (
+        <html>
+            <head>
+                
+            </head>
+            <body>
+                <PrimeReactProvider>
+                    <LayoutContextProvider>
+                        {children}
+                    </LayoutContextProvider>
+                </PrimeReactProvider>
+            </body>
+        </html>
+    );
 }
