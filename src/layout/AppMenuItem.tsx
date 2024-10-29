@@ -13,9 +13,9 @@ export const AppMenuitem = (props: AppMenuItemProps) => {
                 {item.items.map((child, i) => {
                     return (
                         <AppMenuitem 
-                            item={child} 
+                            item={child}
                             root={false}
-                            index={i} 
+                            index={i}
                             className={child.badgeClass}
                             parentKey={key}
                             key={item.label}

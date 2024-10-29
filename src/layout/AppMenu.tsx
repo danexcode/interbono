@@ -19,7 +19,6 @@ export const AppMenu = () => {
             ]
         }
     ]
-    console.log(model)
 
     return (
         <div className="">

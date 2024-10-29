@@ -1,5 +1,3 @@
-'use client';
-import { LayoutContextProvider } from '../layout/context/layoutcontext';
 import { PrimeReactProvider } from 'primereact/api';
 
 import "primereact/resources/themes/lara-light-blue/theme.css";
@@ -20,9 +18,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
             </head>
             <body>
                 <PrimeReactProvider>
-                    <LayoutContextProvider>
-                        {children}
-                    </LayoutContextProvider>
+                    {children}
                 </PrimeReactProvider>
             </body>
         </html>
